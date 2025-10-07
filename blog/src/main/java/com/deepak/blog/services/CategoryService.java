@@ -1,0 +1,12 @@
+package com.deepak.blog.services;
+
+import com.deepak.blog.domain.entities.Category;
+
+import java.util.List;
+import java.util.UUID;
+
+public interface CategoryService {
+    List<Category> listCategories();
+    Category createCategory(Category category);
+    void deleteCategory(UUID id);
+}

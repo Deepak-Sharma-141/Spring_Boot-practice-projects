@@ -79,7 +79,7 @@ public class Post {
 
     }
 
-    @PrePersist
+    @PreUpdate
     protected void onUpdate(){
         this.updatedAt =LocalDateTime.now();
     }
